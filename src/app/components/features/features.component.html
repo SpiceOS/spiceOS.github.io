@@ -1,1 +1,77 @@
-<p>features works!</p>
+<div class="container">
+    <div class="row icon-text-row">
+        <div class="col-sm-1 col-fix">
+            <img src="../../../assets/smartphone.png" alt="">
+        </div>
+        <div class="col-sm-11 col-fix">
+            <h1 class="icon-text-title">Our Features</h1>
+            <p class="icon-text-description">Which You Can Mess With</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- collapse -->
+<div class="container">
+    <div class="container justify-content-center align-items-center">
+        <div class="col-12">
+            <div style="margin-top: 3rem;">
+                <div class="accordion mb-5 mb-md-6" id="helpAccordionOne">
+                    <div class="accordion-item"
+                        style="background-color: #161A25;  box-shadow: 0px 0px 30px rgba(69, 71, 75, 0.25);">
+                        <div class="accordion accordion-flush" id="accordionFlushFeatures" *ngFor="let feature of features; let i = index">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" [id]="'heading'+i">
+                                        <button class="accordion-button" type="button" [ngClass]="{ 'collapsed': i != -1 }" data-bs-toggle="collapse"
+                                            [attr.data-bs-target]="'#collapse'+i" aria-expanded="true" [attr.aria-controls]="'collapse'+i"
+                                            style="font-family: Poppins;font-weight: 200; font-size: medium; background-color: #24272F;color: white;">
+                                            {{feature.title}}
+                                        </button>
+                                    </h2>
+                                    <div [id]="'collapse'+i" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingOne" [ngClass]="{ 'show': i == -1 }" [attr.aria-labelledby]="'heading'+i"
+                                        style="font-family: Poppins;font-weight: 200; font-size: medium; background-color: #24272F;color: white;">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li *ngFor="let listing of features[i].list">{{listing}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- check out responsive stuffs ! -->
+<div class="fullscreen" style="
+    width: 100vw;
+    height: 100vh;
+  ">
+    <div class="container">
+        <div class="row icon-text-row">
+            <div class="col-sm-1 col-fix">
+                <img src="../../../assets/smartphone.png" alt="">
+            </div>
+            <div class="col-sm-11 col-fix">
+                <h1 class="icon-text-title">Some ScreenShots</h1>
+                <p class="icon-text-description">Just To Feel SpiceOS</p>
+            </div>
+
+        </div><br>
+
+        <!-- <div class="row" style="">
+            <div class="col-lg-4 col-sm-4"><img src="../../../assets/spiceos_hero.png"></div>
+            <div class="col-lg-4 col-sm-4"><img src="../../../assets/spiceos_hero.png"></div>
+            <div class="col-lg-4 col-sm-4"><img src="../../../assets/spiceos_hero.png"></div>
+        </div> -->
+
+        <!-- Owl Goes Here ! -->
+        
+    </div>
+</div>

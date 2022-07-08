@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as feter from '../../../assets/json/features.json';
 
 @Component({
   selector: 'app-features',
@@ -8,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class FeaturesComponent implements OnInit {
 
   constructor() { }
-
+  features:any
   ngOnInit(): void {
+    let fetr = feter
+    this.features = fetr.data;
   }
 
 }
