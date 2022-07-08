@@ -5,14 +5,14 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 body {
-    min-height:100%;
-    background-color: #161A25;
-    background:url(assets/png/background.png);
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-attachment: fixed;
-    background-size:cover;
-  }
+  min-height: 100%;
+  background-color: #161A25;
+  background: url(assets/png/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 // container 
 .container,
@@ -21,9 +21,9 @@ body {
 .container-md,
 .container-sm,
 .container-xl {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--bs-gutter-x, 1.25rem);
-    padding-right: var(--bs-gutter-x, 1.25rem);
-    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--bs-gutter-x, 1.25rem);
+  padding-right: var(--bs-gutter-x, 1.25rem);
+  width: 100%;
 }
