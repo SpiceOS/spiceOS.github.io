@@ -1,0 +1,164 @@
+.center {
+  // Align Items vertical center
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.unleash {
+
+  /* Unleash The Power Of Android */
+  position: relative;
+  width: 100%;
+  height: 20%;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  color: #00FF7B;
+
+  // Normal View
+  font-size: 64px;
+  line-height: 96px;
+  margin-top: 0%;
+
+}
+
+.welcometospiceos {
+  /* Welcome To SpiceOS, */
+
+
+  position: relative;
+  width: 100%;
+  height: 10%;
+
+  line-height: 45px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  color: #FFFFFF;
+
+  font-size: 36px;
+  margin-top: 5%;
+
+
+}
+
+.butn {
+
+  background: #15B261;
+  border-radius: 28px;
+  color: #161A25;
+  width: 160px;
+  height: 60px;
+  padding: 15px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+
+
+  // normal view
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+// media query
+//for devices less than 390
+@media (max-width:400px) {
+
+  .box h2::after {
+    //movile view 390
+    height: 20px;
+  }
+
+  .butn {
+    // normal view
+    margin-top: 20%;
+  }
+}
+
+//for devices more than 390
+@media (max-width:700px) and (min-width:400px) {
+
+  .box h2::after {
+    //movile view 390
+    height: 24px;
+  }
+
+  .butn {
+    // normal view
+    margin-top: 20%;
+  }
+}
+
+
+/* Media Query for Bishes Like Galaxy Fold */
+@media (max-width: 300px) {
+  .unleash {
+    // mobile 390px
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .welcometospiceos {
+    // // mobile view 400
+    font-size: 16px;
+    margin-top: 20%;
+  }
+
+  .butn {
+    // normal view
+    margin-top: 20%;
+  }
+
+}
+
+
+/* Media Query for low resolution Mobile Devices */
+@media (min-width: 300px) and(max-width: 400px) {
+  .unleash {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .welcometospiceos {
+    font-size: 20px;
+    margin-top: 20%;
+  }
+
+
+}
+
+/* Media Query for  Mobile Devices low resolution Devices Tablets, Ipads */
+@media (min-width: 400px) and (max-width: 767px) {
+  .unleash {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .welcometospiceos {
+    // // mobile view 400
+    font-size: 24px;
+    margin-top: 20%;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {}
