@@ -1,0 +1,11 @@
+{
+    "data":[
+    {"id":0,"Name":"Mohammed Althaf Thayyil","Tag":"Founder/Lead Developer","Pic":"https://github.com/althafvly.png","Git":"https://github.com/althafvly","Tg":"https://t.me/althafvly"},
+    {"id":1,"Name":"Anush Madathumkara","Tag":"Core Developer","Pic":"https://github.com/Anush02198.png","Git":"https://github.com/Anush02198","Tg":"https://t.me/anush02198"},
+    {"id":2,"Name":"Jijin Raj","Tag":"Core Developer","Pic":"https://github.com/jijinraj.png","Git":"https://github.com/jijinraj","Tg":"https://t.me/GhosTriX"},
+    {"id":3,"Name":"Suneesh S","Tag":"Core Developer","Pic":"https://github.com/kalminhere.png","Git":"https://github.com/kalminhere","Tg":"https://t.me/kalmin06"},
+    {"id":4,"Name":"Ashwin A.S","Tag":"Core Developer","Pic":"https://github.com/aswin7469.png","Git":"https://github.com/aswin7469","Tg":"https://t.me/aswin_a_s"},
+    {"id":5,"Name":"Vivek Achooz","Tag":"Core Developer","Pic":"https://github.com/Vivekachooz.png","Git":"https://github.com/Vivekachooz","Tg":"https://t.me/vivekachooz"},
+    {"id":6,"Name":"Deepansh Pandey","Tag":"Designer","Pic":"https://github.com/deepanshpandey.png","Git":"https://github.com/deepanshpandey","Tg":"https://t.me/coffeeinacafe"}
+    ]
+}
