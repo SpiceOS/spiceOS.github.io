@@ -3,9 +3,11 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #161A25;
 }
@@ -28,7 +30,7 @@ body {
 .accordion-button {
   font-family: Poppins;
   font-weight: 200;
-  font-size: medium; 
+  font-size: medium;
   color: #D9D9D9;
   align-items: center;
   background-color: #24272F;
@@ -78,7 +80,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .accordion-button:after {
-      transition: none;
+    transition: none;
   }
 }
 
@@ -100,6 +102,7 @@ body {
 .accordion-item {
   background-color: #24272F;
   border: 1px solid #24272F;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);
 }
 
 .accordion-item:first-of-type {
@@ -137,7 +140,7 @@ body {
   font-family: Poppins;
   font-weight: 400;
   font-size: medium;
-  
+
 }
 
 .accordion-flush .accordion-collapse {
