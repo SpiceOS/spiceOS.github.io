@@ -1,0 +1,153 @@
+.nav-item {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.nav-item .active {
+    color: mediumseagreen;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.sidenav {
+    color: white;
+}
+
+hr {
+    height: 1px;
+    color: #D9D9D9;
+}
+
+h4 {
+    color: #D9D9D9;
+    margin-top: 0px;
+    margin-bottom: 5%;
+    font-size: medium;
+}
+
+.madewithlove {
+    color: #D9D9D9;
+    font-size: medium;
+}
+
+.url-container-start {
+    text-align: start;
+}
+
+.url-container-middle {
+    text-align: center;
+}
+
+.url-container-end {
+    text-align: end;
+}
+
+.social-icon {
+    margin: 5px;
+    font-size: medium;
+    color: #D9D9D9;
+}
+
+
+// media query
+/* Media Query for Devices Like Galaxy Fold */
+@media (max-width: 300px) {
+    .nav-item {
+        font-size: small;
+    }
+
+    .madewithlove {
+        font-size: xx-small;
+    }
+
+    .url-container-start {
+        text-align: start;
+        width: 50%;
+    }
+
+    .url-container-middle {
+        text-align: end;
+        width: 50%;
+    }
+
+    .url-container-end {
+        text-align: end;
+        margin-bottom: 10%;
+    }
+}
+
+/* Media Query for low resolution Mobile Devices */
+@media (min-width: 300px) and(max-width: 400px) {
+    .nav-item {
+        font-size: small;
+    }
+
+    .madewithlove {
+        font-size: x-small;
+    }
+
+    .url-container-start {
+        text-align: start;
+        width: 50%;
+    }
+
+    .url-container-middle {
+        text-align: end;
+        width: 50%;
+    }
+
+    .url-container-end {
+        text-align: end;
+        margin-bottom: 10%;
+    }
+}
+
+/* Media Query for  Mobile Devices low resolution Devices Tablets, Ipads */
+@media (min-width: 400px) and (max-width: 767px) {
+    .nav-item {
+        font-size: medium;
+    }
+
+    .madewithlove {
+        font-size: small;
+    }
+
+    .url-container-start {
+        text-align: start;
+        width: 50%;
+    }
+
+    .url-container-middle {
+        text-align: end;
+        width: 50%;
+    }
+
+    .url-container-end {
+        text-align: end;
+        margin-bottom: 10%;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-item {
+        font-size: large;
+    }
+
+    .madewithlove {
+        font-size: medium;
+    }
+
+    .url-container-start {
+        text-align: start;
+    }
+
+    .url-container-middle {
+        text-align: center;
+    }
+
+    .url-container-end {
+        text-align: end;
+    }
+}

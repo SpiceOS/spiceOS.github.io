@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { DownloadsComponent } from './components/downloads/downloads.component';
 import { ChangelogComponent } from './components/changelog/changelog.component';
+import { FooterComponent } from './components/common/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChangelogComponent } from './components/changelog/changelog.component';
     AboutComponent,
     FeaturesComponent,
     DownloadsComponent,
-    ChangelogComponent
+    ChangelogComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
