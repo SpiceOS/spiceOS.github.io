@@ -5,6 +5,10 @@ h4 {
   color: #15B261;
 }
 
+h4.learnmore {
+  color: #D9D9D9;
+}
+
 p {
   margin-top: 20px;
   font-family: Poppins;
@@ -30,6 +34,24 @@ p {
   // display: flex;
   // justify-content: center;
   // align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.full-screen-grid {
+  height: 100vh;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.learnmore-sizing {
+  height: 75vh;
 }
 
 .bgimg {
@@ -100,8 +122,6 @@ p {
 
 }
 
-
-
 .butn {
 
   background: #15B261;
@@ -114,7 +134,6 @@ p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-
 
   // normal view
   margin-top: 5%;
@@ -154,6 +173,16 @@ p {
     margin-top: 20%;
   }
 
+  // fix for footer overlap
+  // As The Fullscreen Shows 100vh height and the data exceed 100vh in mobile view
+  // it causes ovelaping ! 
+  .full-screen-grid {
+    height: unset;
+  }
+
+  h4.learnmore {
+    font-size: 15px;
+  }
 
 }
 
@@ -184,7 +213,13 @@ p {
     margin-top: 20%;
   }
 
+  .full-screen-grid {
+    height: unset;
+  }
 
+  h4.learnmore {
+    font-size: 20px;
+  }
 
 }
 
@@ -214,13 +249,15 @@ p {
     margin-top: 20%;
   }
 
-
+  .full-screen-grid {
+    height: unset;
+  }
 
 }
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .full-screen {
+  .full-screen-grid {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -231,20 +268,18 @@ p {
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .full-screen {
+  .full-screen-grid {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-
-
 }
 
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
-  .full-screen {
+  .full-screen-grid {
     height: 100vh;
     display: flex;
     justify-content: center;
