@@ -8,7 +8,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a style="text-decoration: none; color:#15B261" href="#">Downloads</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Poco X3 Pro</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{device[0]?.device_name}}</li>
                 </ol>
             </div>
         </div>
@@ -29,7 +29,7 @@
                     </div>
                     <div>
                         <!-- <canvas id="myChart" style="width:100%; max-height:140px"></canvas> -->
-                        <h5>Redmi Note 4</h5>
+                        <h5>{{device[0]?.device_name}}</h5>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     </div>
                     <div>
                         <!-- <canvas id="myChart" style="width:100%; max-height:140px"></canvas> -->
-                        <h5>Mido</h5>
+                        <h5>{{device[0]?.device_codename}}</h5>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     </div>
                     <div>
                         <!-- <canvas id="myChart" style="width:100%; max-height:140px"></canvas> -->
-                        <h5>Jijin Raj</h5>
+                        <h5>{{device[0].ota_json?.maintainer}}</h5>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     </div>
                     <div>
                         <!-- <canvas id="myChart" style="width:100%; max-height:140px"></canvas> -->
-                        <h5>Vanilla</h5>
+                        <h5>{{device[0].ota_json?.buildtype}}</h5>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                                 <span class="fw-bold">12.1</span>
                             </li>
                             <li class="py-3 border-bottom d-flex justify-content-between">
-                                <span class="fw-light">SpiceOs Version</span>
+                                <span class="fw-light">SpiceOS Version</span>
                                 <span class="fw-bold">5.3</span>
                             </li>
                             <li class="py-3 d-flex justify-content-between">
@@ -114,7 +114,7 @@
                             </li>
                         </ul>
                         <div class="text-center">
-                            <a href="#" class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
+                            <a href="https://github.com/SpiceOS-Beta" class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
                                 style="border: 2px solid black;">View Source Code</a>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                         <ul class="p-0 m-0 mt-3">
                             <li class="py-3 border-bottom d-flex justify-content-between">
                                 <span class="fw-light">File Name</span>
-                                <span class="fw-bold">SpiceOS-Mido-12.1-20220613-1246-OFFICIAL.zip</span>
+                                <span class="fw-bold">{{device[0].ota_json?.filename}}</span>
                             </li>
                             <li class="py-3 border-bottom d-flex justify-content-between">
                                 <span class="fw-light">MD5</span>
@@ -144,15 +144,15 @@
                             </li>
                             <li class="py-3 d-flex justify-content-between">
                                 <span class="fw-light">Build Date</span>
-                                <span class="fw-bold">June 13, 2022 12:46 UTC</span>
+                                <span class="fw-bold">{{device[0].ota_json?.build_date}}</span>
                             </li>
                         </ul>
                         <div class="text-center">
-                            <a href="#" class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
-                                style="border: 2px solid black;">View Source Code</a>
+                            <a href={{device[0].ota_json?.download}} class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
+                                style="border: 2px solid black;">Download Latest Version</a>
 
-                            <a href="#" class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
-                                style="border: 2px solid black;">View Source Code</a>
+                            <a href={{device[0].ota_json?.previous_build}} class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
+                                style="border: 2px solid black;">Download Previous Versions</a>
 
                         </div>
                     </div>
@@ -173,19 +173,28 @@
                         <ul class="p-0 m-0 mt-3">
                             <li class="py-3 border-bottom d-flex justify-content-between">
                                 <span class="fw-light">Device Support Group</span>
-                                <span class="fw-bold"><i class="bi bi-telegram"></i></span>
+                                <span class="fw-bold"><a href={{device[0].ota_json?.telegram}} target="_blank" class="btn btn-secondary">
+                                    <i class="bi bi-telegram"></i>
+                                   </a></span>
+
                             </li>
                             <li class="py-3 border-bottom d-flex justify-content-between">
                                 <span class="fw-light">XDA Forum Post</span>
-                                <span class="fw-bold"><i class="bi bi-telegram"></i></span>
+                                <span class="fw-bold"><a href={{device[0].ota_json?.forum}} target="_blank" class="btn btn-secondary">
+                                    <i class="bi bi-code-square"></i>
+                                   </a></span>
                             </li>
                             <li class="py-3 border-bottom d-flex justify-content-between">
                                 <span class="fw-light">SpiceOS Channel</span>
-                                <span class="fw-bold"><i class="bi bi-telegram"></i></span>
+                                <span class="fw-bold"><a href="https://t.me/spiceosofficial" target="_blank" class="btn btn-secondary">
+                                    <i class="bi bi-telegram"></i>
+                                   </a></span>
                             </li>
                             <li class="py-3 d-flex justify-content-between">
                                 <span class="fw-light">SpiceOS Community</span>
-                                <span class="fw-bold"><i class="bi bi-telegram"></i></span>
+                                <span class="fw-bold"><a href="https://t.me/spiceos" target="_blank" class="btn btn-secondary">
+                                    <i class="bi bi-telegram"></i>
+                                   </a></span>
                             </li>
                         </ul>
                     </div>
