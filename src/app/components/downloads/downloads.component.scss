@@ -1,0 +1,22 @@
+.card {
+    border-radius: 5px;
+    border: #fff solid 1px;
+    background-color: #161616;
+    border-radius: 1rem;
+    .card-text{
+        color: mediumseagreen;
+    }
+    .card-title{
+        color: white;
+    }
+  }
+  .profile-box{
+    background-size:cover; float:left; width:100%; text-align:center; padding:30px 0; position:relative; overflow:hidden;
+    }
+    
+    // .profile-box:before{
+    // filter: blur(10px);background:url("https://images.pexels.com/photos/195825/pexels-photo-195825.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat; background-size:cover; width:120%; position:absolute; content:""; height:120%; left:-10%;top:0;z-index:0;
+    // }
+    .profile-box img{
+        width:50%; height:50%; position:relative; border:5px;
+    }

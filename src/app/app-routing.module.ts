@@ -15,7 +15,7 @@ const routes: Routes = [
 },
   {path:'home' ,component:HomeComponent},
   {path:'downloads' ,component:DownloadsComponent},
-  {path:'device/:id' ,component:DeviceComponent},  
+  {path:'downloads/:id' ,component:DeviceComponent},  
   {path:'about' ,component:AboutComponent},
   {path:'features' ,component:FeaturesComponent},
   {path:'changelog' ,component:ChangelogComponent}

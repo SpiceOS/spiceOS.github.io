@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
 import * as dfd from '../../../assets/json/download_handler.json';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-downloads',
@@ -11,7 +12,7 @@ export class DownloadsComponent implements OnInit {
 
   download:any;
   AllDeviceData:any;
-  constructor() { }
+  constructor(private routes: Router) { }
 
   ngOnInit(): void {
     let defed = dfd;
@@ -22,12 +23,16 @@ export class DownloadsComponent implements OnInit {
   }
 
   getalldata(){
+    this.AllDeviceData = [...this.download]    
     this.download.forEach((e:any,index:number) => {
         axios.get(e.ota_json).then((res)=>{
-          // console.log(res.data.response[0]);
-          this.AllDeviceData.push(res.data.response[0]);
+          this.AllDeviceData[index].ota_json = res.data.response[0];
         })
       });
+  }
+
+  navigatetodevicedownload(device:any){
+  this.routes.navigate(['downloads/'+device]);
   }
 
 }
