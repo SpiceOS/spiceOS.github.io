@@ -1,18 +1,18 @@
 {
     "data":[
-    {"id":0,"Title":"Changelogs For V5.0","Date":"February 19,2022","Content":[
+    {"Title":"Changelogs For V5.0","Date":"February 19,2022","Content":[
         "Initial A12 Build"
     ]},
-    {"id":1,"Title":"Changelogs For V5.1","Date":"April 25,2022","Content":[
+    {"Title":"Changelogs For V5.1","Date":"April 25,2022","Content":[
         "Initial A12.1 Build"
     ]},
-    {"id":2,"Title":"Changelogs For V5.2","Date":"June 01,2022","Content":[
+    {"Title":"Changelogs For V5.2","Date":"June 01,2022","Content":[
         "May 2022 Security Patch",
         "Added Monet Customization",
         "SpiceOS Settings Redesign",
         "Settings Front Page Redesign"
     ]},
-    {"id":3,"Title":"Changelogs For V5.3","Date":"June 12,2022","Content":[
+    {"Title":"Changelogs For V5.3","Date":"June 12,2022","Content":[
         "About Phone Redesign",
         "Add Haptic Feedback Tiles",
         "Landscape and Big Dotted Circe Battery Icon",

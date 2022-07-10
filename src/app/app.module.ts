@@ -10,6 +10,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { DownloadsComponent } from './components/downloads/downloads.component';
 import { ChangelogComponent } from './components/changelog/changelog.component';
 import { FooterComponent } from './components/common/footer/footer.component';
+import { DeviceComponent } from './components/device/device.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/common/footer/footer.component';
     FeaturesComponent,
     DownloadsComponent,
     ChangelogComponent,
-    FooterComponent
+    FooterComponent,
+    DeviceComponent
   ],
   imports: [
     BrowserModule,

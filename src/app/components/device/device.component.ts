@@ -3,11 +3,11 @@ import axios from 'axios';
 import * as dfd from '../../../assets/json/download_handler.json';
 
 @Component({
-  selector: 'app-downloads',
-  templateUrl: './downloads.component.html',
-  styleUrls: ['./downloads.component.scss']
+  selector: 'app-device',
+  templateUrl: './device.component.html',
+  styleUrls: ['./device.component.scss']
 })
-export class DownloadsComponent implements OnInit {
+export class DeviceComponent implements OnInit {
 
   download:any;
   AllDeviceData:any;
@@ -18,7 +18,7 @@ export class DownloadsComponent implements OnInit {
     this.download = defed.data;
     this.AllDeviceData = [];
     this.getalldata();
-    console.log(this.AllDeviceData);
+    console.log(this.AllDeviceData);    
   }
 
   getalldata(){
@@ -26,6 +26,9 @@ export class DownloadsComponent implements OnInit {
         axios.get(e.ota_json).then((res)=>{
           // console.log(res.data.response[0]);
           this.AllDeviceData.push(res.data.response[0]);
+        })
+        axios.get(e.changelogs).then((res)=>{
+          Object.assign(this.AllDeviceData[index],{"changelogs":res.data})
         })
       });
   }

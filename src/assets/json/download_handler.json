@@ -1,0 +1,8 @@
+{
+    "data":[
+  
+    {"oem":"POCO","device_name":"POCO X3 Pro","device_codename":"vayu","ota_json":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/mojito.json","changelogs":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/changelog_mojito.txt"},
+    {"oem":"Redmi","device_name":"Redmi Note 10","device_codename":"mojito","ota_json":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/mojito.json","changelogs":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/changelog_mojito.txt"},
+    {"oem":"Xiaomi","device_name":"Mi 11X","device_codename":"alioth","ota_json":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/mojito.json","changelogs":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/changelog_mojito.txt"}
+    ]
+}
