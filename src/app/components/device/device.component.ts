@@ -33,7 +33,7 @@ export class DeviceComponent implements OnInit {
     this.download.forEach((e:any,index:number) => {
         axios.get(e.ota_json).then((res)=>{
           let splitter = res.data.response[0].filename.split("-")
-          res.data.response[0].build_date = splitter[2];
+          res.data.response[0].build_date = splitter[3];
           res.data.response[0].build_date = moment(res.data.response[0].build_date).format('MMMM DD YYYY');
           res.data.response[0].previous_build = res.data.response[0].download.split("SpiceOS");
           // console.log(res.data.response[0].download.split("SpiceOS"))
