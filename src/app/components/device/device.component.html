@@ -137,6 +137,7 @@
                             </li>
                             <li class="py-3 border-bottom d-flex justify-content-between">
                                 <span class="fw-light">MD5</span>
+                                <input type="text" class="form-control" value="{{device[0].ota_json?.md5}}" readonly style="background-color: mediumseagreen;max-width: 50%;">
                                 <span class="fw-bold"> <a href="#" class="fw-bold"
                                         style="text-decoration: none; color: black;"><i class="bi bi-clipboard"></i>
                                         Copy MD5</a>
@@ -148,10 +149,10 @@
                             </li>
                         </ul>
                         <div class="text-center">
-                            <a href={{device[0].ota_json?.download}} class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
+                            <a href="https://sourceforge.net/projects/spiceos/files/12/{{device[0]?.device_codename}}/{{device[0].ota_json?.filename}}/download" class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
                                 style="border: 2px solid black;">Download Latest Version</a>
 
-                            <a href={{device[0].ota_json?.previous_build}} class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
+                            <a href="https://sourceforge.net/projects/spiceos/files/12/{{device[0]?.device_codename}}/" class="mt-4 me-2 btn btn-outline rounded-pill  px-3"
                                 style="border: 2px solid black;">Download Previous Versions</a>
 
                         </div>
