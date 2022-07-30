@@ -1,48 +1,20 @@
-  <div class="container justify-content-center align-items-center">
-    <div class="col-12">
-        <div style="margin-top: 3rem;">
-            <div class="accordion mb-5 mb-md-6" id="helpAccordionOne">
-                <div class="accordion-item"
-                    style="background-color: #161A25;  box-shadow: 0px 0px 30px rgba(69, 71, 75, 0.25);">
-                    <div class="accordion accordion-flush" id="accordionFlushFeatures" *ngFor="let fulldetails of AllDeviceData;let i=index">
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" [id]="'heading'+i">
-                                    <button class="accordion-button" type="button" [ngClass]="{ 'collapsed': i != -1 }" data-bs-toggle="collapse"
-                                        [attr.data-bs-target]="'#collapse'+i" aria-expanded="true" [attr.aria-controls]="'collapse'+i"
-                                        style="font-family: Poppins;font-weight: 200; font-size: medium; background-color: #24272F;color: white;">
-                                        {{fulldetails.oem}}
-                                    </button>
-                                </h2>
-                                <div [id]="'collapse'+i" class="accordion-collapse collapse"
-                                    aria-labelledby="panelsStayOpen-headingOne" [ngClass]="{ 'show': i == -1 }" [attr.aria-labelledby]="'heading'+i"
-                                    style="font-family: Poppins;font-weight: 200; font-size: medium; background-color: #24272F;color: white;">
-                                    <div class="accordion-body">
-                                        <div class="container justify-content-center align-items-center">
-                                            <div class="row">
-                                            <div class="col-lg-4 col-sm-6 col-xs-12" style="margin-top: 1%; margin-bottom: 1%;" *ngIf="fulldetails.oem == fulldetails.ota_json?.oem">
-                                                <div class="card text-center">
-                                                    <div class="profile-box">
-                                                        <img src="https://raw.githubusercontent.com/crdroidandroid/crdroid.net/live/img/devices/{{fulldetails.device_codename}}.webp" class="card-img-top" alt="...">
-                                                    </div>
-                                                  <div class="card-body border-primary card-bg">
-                                                    <h5 class="card-title">{{fulldetails.ota_json?.device}}</h5><br>
-                                                    <p class="card-text">                                                        
-                                                        <a (click)="navigatetodevicedownload(fulldetails.device_codename)" target="_blank" class="btn btn-info">
-                                                        <i class="bi bi-download"> Download</i>
-                                                       </a></p>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              </div>
-                                              </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="container justify-content-center align-items-center">
+    <div class="row">
+    <div class="col-lg-4 col-sm-6 col-xs-12" style="margin-top: 1%; margin-bottom: 1%;" *ngFor="let device of AllDeviceData; let i = index">
+        <div class="card text-center">
+            <div class="profile-box">
+                <img src="https://raw.githubusercontent.com/crdroidandroid/crdroid.net/live/img/devices/{{device.device_codename}}.webp" class="card-img-top" alt="...">
             </div>
+          <div class="card-body border-primary card-bg">
+            <h5 class="card-title">{{device.device_name}}</h5>
+            <p class="card-text">{{device.device_codename}}</p>
+            <span class="social-box">
+                <a (click)="navigatetodevicedownload(device.device_codename)" target="_blank" class="btn btn-info">
+                  <i class="bi bi-download"> Download</i>
+                 </a>
+          </span>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+      </div>
+      </div>
