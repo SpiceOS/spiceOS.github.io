@@ -1,6 +1,10 @@
-<div class="container justify-content-center align-items-center">
+<div class="container justify-content-center align-items-center"> 
     <div class="row">
-    <div class="col-lg-4 col-sm-6 col-xs-12" style="margin-top: 1%; margin-bottom: 1%;" *ngFor="let device of AllDeviceData; let i = index">
+      <div class="input-group xs-12 sm-6 mb-3">
+        <span class="input-group-text" style="background-color: #434343;" id="basic-addon1"><i class="bi bi-search" style="color: white;"></i></span>
+        <input type="text" class="form-control" placeholder="Search For Your Device" aria-label="Username" aria-describedby="basic-addon1" (input)="Search($event.target)">
+      </div> 
+    <div class="col-lg-4 col-sm-6 col-xs-12" style="margin-top: 1%; margin-bottom: 1%;" *ngFor="let device of FilteredDeviceData; let i = index">
         <div class="card text-center">
             <div class="profile-box">
                 <img src="https://raw.githubusercontent.com/crdroidandroid/crdroid.net/live/img/devices/{{device.device_codename}}.webp" class="card-img-top" alt="...">
