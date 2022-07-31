@@ -22,6 +22,20 @@
         "Signal Icon Theming",
         "Wifi Icon Theming",
         "Added Game Space"
+    ]},
+    {"Title":"Changelogs For V5.4","Date":"July 11,2022","Content":[
+        "QS Transperancy",
+        "Edge Lighting",
+        "Edge Lighting View",
+        "Edge Lighting Color",
+        "Edge Lighting Duration",
+        "Haptic Feedback on back gesture",
+        "Monet support for LatinIME",
+        "Updated unicode of Emoji to V14.0",
+        "Monet support for DeskClock",
+        "Updated Icon for Calendar",
+        "Added Option To Invert Navigation Buttons",
+        "Fixed Alarm issues"
     ]}
     ]
 }
