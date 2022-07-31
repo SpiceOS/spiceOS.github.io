@@ -11,6 +11,8 @@ import { DownloadsComponent } from './components/downloads/downloads.component';
 import { ChangelogComponent } from './components/changelog/changelog.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { DeviceComponent } from './components/device/device.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { DeviceComponent } from './components/device/device.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
