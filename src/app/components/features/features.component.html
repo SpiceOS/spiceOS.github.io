@@ -16,7 +16,7 @@
     <div class="col-12">
         <div style="margin-top: 3rem;">
             <div class="accordion mb-5 mb-md-6" id="helpAccordionOne">
-                <div class="accordion-item" style="">
+                <div class="accordion-item">
                     <div class="accordion  accordion-flush" id="accordionPanelToggler">
                         <div class="" *ngFor="let feature of features; let i = index">
                             <h2 class="accordion-header" [id]="'heading'+i">
@@ -64,7 +64,7 @@
         <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)">
             <ng-container *ngFor="let slide of dynamicSlides">
               <ng-template carouselSlide [id]="slide.id">
-                <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                <img class="owl-lazy img-responsive"[src]="slide.src" [alt]="slide.alt" [title]="slide.title">
               </ng-template>
             </ng-container>
           </owl-carousel-o>

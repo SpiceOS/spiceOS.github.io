@@ -16,31 +16,31 @@ export class FeaturesComponent implements OnInit {
   dynamicSlides = [
     {
       id: "1",
-      src:'https://via.placeholder.com/600/92c952',
+      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-143.jpg',
       alt:'Side 1',
       title:'Side 1'
     },
     {
       id: "2",
-      src:'https://via.placeholder.com/600/771796',
+      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-145.jpg',
       alt:'Side 2',
       title:'Side 2'
     },
     {
       id: "3",
-      src:'https://via.placeholder.com/600/24f355',
+      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-144.jpg',
       alt:'Side 3',
       title:'Side 3'
     },
     {
       id: "4",
-      src:'https://via.placeholder.com/600/d32776',
+      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-147.jpg',
       alt:'Side 4',
       title:'Side 4'
     },
     {
       id: "5",
-      src:'https://via.placeholder.com/600/f66b97',
+      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-148.jpg',
       alt:'Side 5',
       title:'Side 5'
     }
@@ -54,11 +54,15 @@ export class FeaturesComponent implements OnInit {
   }
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
-    dots: false,
-    navSpeed: 600,
+    dots: true,
+    dotsEach:true,
+    items : 3,
+    margin: 20,
+    autoHeight : true,
+    smartSpeed :900,
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
@@ -70,11 +74,8 @@ export class FeaturesComponent implements OnInit {
       760: {
         items: 3
       },
-      1000: {
-        items: 4
-      }
     },
-    nav: true
+    nav: false
   }
 
 }
