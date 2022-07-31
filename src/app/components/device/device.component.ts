@@ -50,4 +50,8 @@ export class DeviceComponent implements OnInit {
     console.log(this.device);
   }
 
+  copyMD5(sha: any){
+    navigator['clipboard'].writeText(sha).then().catch(e => console.error(e));
+  }
+
 }

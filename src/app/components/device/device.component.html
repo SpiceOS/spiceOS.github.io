@@ -138,7 +138,7 @@
                             <li class="py-3 border-bottom d-flex justify-content-between">
                                 <span class="fw-light">MD5</span>
                                 <input type="text" class="form-control" value="{{device[0].ota_json?.md5}}" readonly style="background-color: mediumseagreen;max-width: 50%;">
-                                <span class="fw-bold"> <a href="#" class="fw-bold"
+                                <span class="fw-bold"> <a type="button" class="fw-bold" (click)="copyMD5(device[0].ota_json?.md5)"
                                         style="text-decoration: none; color: black;"><i class="bi bi-clipboard"></i>
                                         Copy MD5</a>
                                 </span>
