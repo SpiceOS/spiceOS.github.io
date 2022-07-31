@@ -20,7 +20,8 @@
                 "Show Brightness Slider in QS Panel",
                 "Adaptive Brightness Button",
                 "Show Brightness Slider on bottom",
-                "Vibrate on Touch"
+                "Vibrate on Touch",
+                "QS Transperancy"
             ]
         },
         {
@@ -81,7 +82,11 @@
                 "Vibrate on call waiting",
                 "Vibrate on call disconnect",
                 "Heads Up",
-                "Saner Heads Up"
+                "Saner Heads Up",
+                "Edge Lighting",
+                "Edge Lighting View",
+                "Edge Lighting Color",
+                "Edge Lighting Duration"
             ]
         },
         {
