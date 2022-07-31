@@ -12,6 +12,7 @@
           <div class="card-body border-primary card-bg">
             <h5 class="card-title">{{device.device_name}}</h5>
             <p class="card-text">{{device.device_codename}}</p>
+            <p class="card-title">Latest Build: {{device.ota_json.build_date}} (V{{device.ota_json.version}})</p>
             <span class="social-box">
                 <a (click)="navigatetodevicedownload(device.device_codename)" target="_blank" class="btn btn-info">
                   <i class="bi bi-download"> Download</i>
