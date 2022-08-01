@@ -1,23 +1,28 @@
-<div class="container justify-content-center align-items-center"> 
-    <!-- 
-      its for mobile view !
-      <div class="row" style="margin-top: 30%;"> -->
-      <div class="row" style="margin-top: 10%;">
-      <div class="input-group xs-12 sm-6 mb-3">
-        <span class="input-group-text" style="background-color: #43434300;" id="basic-addon1"><i class="bi bi-search" style="color: white;"></i></span>
-        <input type="text" class="form-control" placeholder="Search For Your Device" aria-label="Username" aria-describedby="basic-addon1" (input)="Search($event.target)" style="background-color: #161a2500;">
-      </div> 
-    <div class="col-lg-4 col-sm-6 col-xs-12" style="margin-top: 5%; margin-bottom: 5%;" *ngFor="let device of FilteredDeviceData; let i = index" (click)="navigatetodevicedownload(device.device_codename)" target="_blank">
-        <div class="card text-center" style="background-color: #1C2029; box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);">
-            <div class="profile-box" style="padding: 20px; margin:0px; background-color: aqua;border-radius: 4%;text-align: center;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);">
-                <img src="https://raw.githubusercontent.com/crdroidandroid/crdroid.net/live/img/devices/{{device.device_codename}}.webp" class="card-img-top"  alt="...">
-            </div>
-          <div class="card-body" style="text-align: start;">
-            <p class="card-text">{{device.device_codename}}</p>
-            <h5 class="card-title">{{device.device_name}}</h5>
-            <p class="card-title">Latest Build: {{device.ota_json.build_date}} (V{{device.ota_json.version}})</p>
-          </div>
+<div class="container justify-content-center align-items-center">
+  <div class="row searchbar">
+    <div class="input-group xs-12 sm-6 mb-3">
+      <span class="input-group-text" style="background-color: #43434300;" id="basic-addon1"><i class="bi bi-search"
+          style="color: white;"></i></span>
+      <input type="text" class="form-control" placeholder="Search For Your Device" aria-label="Username"
+        aria-describedby="basic-addon1" (input)="Search($event.target)" style="background-color: #161a2500;color: white;">
+    </div>
+    <div class="col-lg-4 col-sm-6 col-xs-12" style="margin-top: 5%; margin-bottom: 5%;"
+      *ngFor="let device of FilteredDeviceData; let i = index"
+      (click)="navigatetodevicedownload(device.device_codename)" target="_blank">
+      <div class="card text-center"
+        style="background-color: #1C2029; box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);">
+        <div class="profile-box"
+          style="padding: 20px; margin:0px; background-color: aqua;border-radius: 4%;text-align: center;box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);">
+          <img
+            src="https://raw.githubusercontent.com/crdroidandroid/crdroid.net/live/img/devices/{{device.device_codename}}.webp"
+            class="card-img-top" alt="...">
+        </div>
+        <div class="card-body" style="text-align: start;">
+          <p class="card-text">{{device.device_codename}}</p>
+          <h5 class="card-title">{{device.device_name}}</h5>
+          <p class="card-title">Latest Build: {{device.ota_json.build_date}} (V{{device.ota_json.version}})</p>
         </div>
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
+</div>
