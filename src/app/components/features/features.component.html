@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row icon-text-row">
         <div class="col-sm-1 col-fix">
-            <img src="../../../assets/smartphone.png" alt="">
+            <img src="../../../assets/png/Our_Features.png" style="width: 100%;" alt="">
         </div>
         <div class="col-sm-11 col-fix">
             <h1 class="icon-text-title" style="color:mediumseagreen;">Our Features</h1>
@@ -51,7 +51,7 @@
     <div class="container">
         <div class="row icon-text-row">
             <div class="col-sm-1 col-fix">
-                <img src="../../../assets/smartphone.png" alt="">
+                <img src="../../../assets/png/Some_ScreenShots.png" style="width: 100%;"alt="">
             </div>
             <div class="col-sm-11 col-fix">
                 <h1 class="icon-text-title" style="color:mediumseagreen;">Some ScreenShots</h1>
@@ -64,7 +64,7 @@
         <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)">
             <ng-container *ngFor="let slide of dynamicSlides">
               <ng-template carouselSlide [id]="slide.id">
-                <img class="owl-lazy img-responsive"[src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                <img class="owl-lazy img-responsive"[src]="slide.src" [alt]="slide.alt" [title]="slide.title" style="box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.30);">
               </ng-template>
             </ng-container>
           </owl-carousel-o>

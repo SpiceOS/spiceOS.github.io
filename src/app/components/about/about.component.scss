@@ -1,8 +1,10 @@
 .card {
     border-radius: 5px;
-    border: #fff solid 1px;
-    background-color: #161616;
+    border: mediumseagreen solid 1px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.30);
+    background-color: #161A25;
     border-radius: 1rem;
+    margin: 1.25rem;
     .card-text{
         color: mediumseagreen;
     }
@@ -18,5 +20,6 @@ background-size:cover; float:left; width:100%; text-align:center; padding:30px 0
 filter: blur(10px);background:url("https://images.pexels.com/photos/195825/pexels-photo-195825.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat; background-size:cover; width:120%; position:absolute; content:""; height:120%; left:-10%;top:0;z-index:0;
 }
 .profile-box img{
-    width:170px; height:170px; position:relative; border:5px solid #fff;
+    width:170px; height:170px; position:relative; border:2px solid white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.30);
 }

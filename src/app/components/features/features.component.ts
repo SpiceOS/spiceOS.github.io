@@ -72,7 +72,7 @@ export class FeaturesComponent implements OnInit {
         items: 2
       },
       760: {
-        items: 3
+        items: 5
       },
     },
     nav: false
