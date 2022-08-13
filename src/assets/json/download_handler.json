@@ -1,7 +1,7 @@
 {
     "data":[
   
-    {"oem":"POCO","device_name":"POCO X3 Pro","device_codename":"vayu","ota_json":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/vayu.json","changelogs":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/changelog_vayu.txt"},
-    {"oem":"Redmi","device_name":"Redmi Note 10","device_codename":"mojito","ota_json":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/mojito.json","changelogs":"https://raw.githubusercontent.com/SpiceOS-Beta/android_packages_apps_Updater_Db/12.1/changelog_mojito.txt"}
+    {"oem":"POCO","device_name":"POCO X3 Pro","device_codename":"vayu","ota_json":"https://raw.githubusercontent.com/SpiceOS/android_packages_apps_Updater_Db/12.1/vayu.json","changelogs":"https://raw.githubusercontent.com/SpiceOS/android_packages_apps_Updater_Db/12.1/changelog_vayu.txt"},
+    {"oem":"Redmi","device_name":"Redmi Note 10","device_codename":"mojito","ota_json":"https://raw.githubusercontent.com/SpiceOS/android_packages_apps_Updater_Db/12.1/mojito.json","changelogs":"https://raw.githubusercontent.com/SpiceOS/android_packages_apps_Updater_Db/12.1/changelog_mojito.txt"}
     ]
 }

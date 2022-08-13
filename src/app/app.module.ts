@@ -13,6 +13,7 @@ import { FooterComponent } from './components/common/footer/footer.component';
 import { DeviceComponent } from './components/device/device.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MaintainersComponent } from './components/maintainers/maintainers.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     DownloadsComponent,
     ChangelogComponent,
     FooterComponent,
-    DeviceComponent
+    DeviceComponent,
+    MaintainersComponent
   ],
   imports: [
     BrowserModule,
