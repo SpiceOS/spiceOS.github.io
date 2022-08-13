@@ -16,31 +16,31 @@ export class FeaturesComponent implements OnInit {
   dynamicSlides = [
     {
       id: "1",
-      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-143.jpg',
+      src:'https://raw.githubusercontent.com/SpiceOS/xda_template/12.1/Screenshots/msg-1608443222-143.jpg',
       alt:'Side 1',
       title:'Side 1'
     },
     {
       id: "2",
-      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-145.jpg',
+      src:'https://raw.githubusercontent.com/SpiceOS/xda_template/12.1/Screenshots/msg-1608443222-145.jpg',
       alt:'Side 2',
       title:'Side 2'
     },
     {
       id: "3",
-      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-144.jpg',
+      src:'https://raw.githubusercontent.com/SpiceOS/xda_template/12.1/Screenshots/msg-1608443222-144.jpg',
       alt:'Side 3',
       title:'Side 3'
     },
     {
       id: "4",
-      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-147.jpg',
+      src:'https://raw.githubusercontent.com/SpiceOS/xda_template/12.1/Screenshots/msg-1608443222-147.jpg',
       alt:'Side 4',
       title:'Side 4'
     },
     {
       id: "5",
-      src:'https://raw.githubusercontent.com/SpiceOS-Beta/xda_template/12.1/Screenshots/msg-1608443222-148.jpg',
+      src:'https://raw.githubusercontent.com/SpiceOS/xda_template/12.1/Screenshots/msg-1608443222-148.jpg',
       alt:'Side 5',
       title:'Side 5'
     }
