@@ -21,7 +21,6 @@ export class DownloadsComponent implements OnInit {
     this.download = defed.data;
     this.AllDeviceData = [];
     this.getalldata();
-    console.log(this.AllDeviceData);
   }
 
   getalldata(){

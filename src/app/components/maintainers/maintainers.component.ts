@@ -24,9 +24,7 @@ export class MaintainersComponent implements OnInit {
         axios.get(e.ota_json).then((res)=>{
           let splitter = res.data.response[0].filename.split("-")
           res.data.response[0].device_codename = splitter[5];
-          console.log(res.data.response[0]);
           this.all_maintainers.push(res.data.response[0]);
-          console.log(this.all_maintainers);
         })
       });
   }

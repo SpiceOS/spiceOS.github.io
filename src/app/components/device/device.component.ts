@@ -23,8 +23,7 @@ export class DeviceComponent implements OnInit {
     let defed = dfd;
     this.download = defed.data;
     this.AllDeviceData = [];
-    this.getalldata();  
-    console.log(this.AllDeviceData);
+    this.getalldata();
     this.filterDevice();
   }
 
@@ -36,7 +35,6 @@ export class DeviceComponent implements OnInit {
           res.data.response[0].build_date = splitter[3];
           res.data.response[0].build_date = moment(res.data.response[0].build_date).format('MMMM DD YYYY');
           res.data.response[0].previous_build = res.data.response[0].download.split("SpiceOS");
-          // console.log(res.data.response[0].download.split("SpiceOS"))
           this.AllDeviceData[index].ota_json = res.data.response[0];
         })
         axios.get(e.changelogs).then((res2)=>{
@@ -46,8 +44,7 @@ export class DeviceComponent implements OnInit {
   }
 
   filterDevice(){
-    this.device = this.AllDeviceData.filter((s: { device_codename: string | any[]; }) => s.device_codename.includes(this.id))
-    console.log(this.device);
+    this.device = this.AllDeviceData.filter((s: { device_codename: string | any[]; }) => s.device_codename.includes(this.id));
   }
 
   copyMD5(sha: any){
