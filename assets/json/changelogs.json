@@ -1,0 +1,41 @@
+{
+    "data":[
+    {"Title":"Changelogs For V5.0","Date":"February 19,2022","Content":[
+        "Initial A12 Build"
+    ]},
+    {"Title":"Changelogs For V5.1","Date":"April 25,2022","Content":[
+        "Initial A12.1 Build"
+    ]},
+    {"Title":"Changelogs For V5.2","Date":"June 01,2022","Content":[
+        "May 2022 Security Patch",
+        "Added Monet Customization",
+        "SpiceOS Settings Redesign",
+        "Settings Front Page Redesign"
+    ]},
+    {"Title":"Changelogs For V5.3","Date":"June 12,2022","Content":[
+        "About Phone Redesign",
+        "Add Haptic Feedback Tiles",
+        "Landscape and Big Dotted Circe Battery Icon",
+        "Add Icon Packs",
+        "Add Icon Shapes",
+        "Font Customization",
+        "Signal Icon Theming",
+        "Wifi Icon Theming",
+        "Added Game Space"
+    ]},
+    {"Title":"Changelogs For V5.4","Date":"July 11,2022","Content":[
+        "QS Transperancy",
+        "Edge Lighting",
+        "Edge Lighting View",
+        "Edge Lighting Color",
+        "Edge Lighting Duration",
+        "Haptic Feedback on back gesture",
+        "Monet support for LatinIME",
+        "Updated unicode of Emoji to V14.0",
+        "Monet support for DeskClock",
+        "Updated Icon for Calendar",
+        "Added Option To Invert Navigation Buttons",
+        "Fixed Alarm issues"
+    ]}
+    ]
+}

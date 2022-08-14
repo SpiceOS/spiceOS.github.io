@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "title": "Status Bar Customization",
+            "list": [
+                "Status Bar icons toggle",
+                "Network Traffic monitor and customization",
+                "4G icon toggle",
+                "Battery style and percentage customization",
+                "Show Data Disabled icon",
+                "Roaming Indicator",
+                "Small mobile type icon"
+            ]
+        },
+        {
+            "title": "Quick Settings",
+            "list": [
+                "Quick QS Pulldown",
+                "Show Brightness Slider",
+                "Show Brightness Slider in QS Panel",
+                "Adaptive Brightness Button",
+                "Show Brightness Slider on bottom",
+                "Vibrate on Touch",
+                "QS Transperancy"
+            ]
+        },
+        {
+            "title": "Buttons",
+            "list": [
+                "Playback Control"
+            ]
+        },
+        {
+            "title": "Navigation Bar",
+            "list": [
+                "System Navigations"
+            ]
+        },
+        {
+            "title": "Lockscreen",
+            "list": [
+                "Lockscreen Charging Info",
+                "Ambient wake gestures",
+                "Music Ticker",
+                "Show Media Art",
+                "Media art blur level",
+                "Music Visualizer"
+            ]
+        },
+        {
+            "title": "Power Menu",
+            "list": [
+                "Enable Advanced Restart",
+                "Disable power menu on lock screen"
+            ]
+        },
+        {
+            "title": "Customization",
+            "list": [
+                "Monet Engine",
+                "Headline/Body Fony",
+                "Icon Pack",
+                "Signal Icon Style",
+                "Wifi icon Style",
+                "Icon Shape"
+            ]
+        },
+        {
+            "title": "Gestures",
+            "list": [
+                "System Gestures",
+                "Torch Gestures",
+                "Three Finger Gesture for Screenshot",
+                "Double tap on Lockscreen to Sleep",
+                "Double tap on Statusbar to Sleep"
+            ]
+        },
+        {
+            "title": "Notifications",
+            "list": [
+                "Vibrate on call connect",
+                "Vibrate on call waiting",
+                "Vibrate on call disconnect",
+                "Heads Up",
+                "Saner Heads Up",
+                "Edge Lighting",
+                "Edge Lighting View",
+                "Edge Lighting Color",
+                "Edge Lighting Duration"
+            ]
+        },
+        {
+            "title": "Miscellaneous",
+            "list": [
+                "Ripple Effect",
+                "Wake on Plug",
+                "Haptic Feedback on Back Gesture",
+                "Game Space"
+            ]
+        }
+    ]
+}
